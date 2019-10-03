@@ -35,7 +35,7 @@ class App extends Component {
           this.state.cards.sort(() => Math.random() - 0.5)
           return true;
         } else {
-          this.gameover();
+          this.gameoverDude();
         }
       }
     })
