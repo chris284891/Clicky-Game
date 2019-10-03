@@ -25,14 +25,14 @@ class App extends Component {
   }
 
   clickCheck = id => {
-    this.state.cards.find((o, i) => {
+    this.state.friends.find((o,i) => {
       if (o.id === id) {
         if(friends[i].count === 0){
           friends[i].count = friends[i].count + 1;
           this.setState({score : this.state.score + 1}, function(){
             console.log(this.state.score);
           });
-          this.state.cards.sort(() => Math.random() - 0.5)
+          this.state.friends.sort(() => Math.random() - 0.5)
           return true;
         } else {
           this.gameoverDude();
@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title score={this.state.score} highscore={this.state.highscore}>The Clicky Game</Title>
+        <Title score={this.state.score} highscore={this.state.highscore}>The Friends Clicky Game</Title>
         {this.state.friends.map(friend => (
           <FriendCard
             clickCheck={this.clickCheck}
