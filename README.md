@@ -41,4 +41,5 @@ App should then start automatically in you default browser on http://localhost:3
 # Prequisites
 Just make sure you have a current updated browser.
 
+# Credit
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
